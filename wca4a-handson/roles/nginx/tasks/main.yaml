@@ -1,0 +1,22 @@
+---
+# Ningxのインストール
+- name: Install nginx
+  ansible.builtin.package:
+    name: nginx
+    state: present
+
+# index.htmlを/usr/share/nginx/html/にコピー
+- name: Copy index.html to/usr/share/nginx/html/
+  ansible.builtin.copy:
+    src: index.html
+    dest: /usr/share/nginx/html/index.html
+    owner: root
+    group: root
+    mode: '0644'
+
+# Nginxの起動
+- name: Service and enabled nginx service
+  ansible.builtin.systemd:
+    name: nginx
+    state: started
+    enabled: true
