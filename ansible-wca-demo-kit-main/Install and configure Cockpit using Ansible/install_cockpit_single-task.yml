@@ -1,0 +1,37 @@
+---
+- name: Install and configure Cockpit
+  hosts: rhel
+  become: true
+
+  # module_defaults:
+  #   ansible.builtin.service:
+  #     enabled: true
+  #     state: started
+
+  tasks:
+        # TASK 1
+        # # 1a. 以下のタスク説明のコメントを解除し、タスクの提案を生成します。
+        # #     Note - 提案には、完全修飾コレクション名の使用によるAnsibleのベストプラクティスが含まれます。
+    # - name: Install cockpit package
+
+        # TASK 2
+        # # 2a. 以下のタスク説明のコメントを解除し、タスクの提案を生成します。
+        # #     Note - Ansible Lightspeedは、「.j2」というファイル拡張子に基づいて、「ansible.builtin.template」モジュールが使用されます。
+        # #     Note - この提案では、Ansibleのベストプラクティスに基づいて、ファイルのパーミッション（「0644」）、所有者、グループを設定します。
+    # - name: Copy cockpit.conf.j2 to /etc/cockpit
+
+        # TASK 3
+        # # 3a. 以下のタスク説明のコメントを解除し、タスクの提案を生成します。
+        # #     Note - Ansible Lightspeedは、一般的な「サービスの開始と有効化」のプロンプトと、
+        # #            完全なプレイブックのコンテキストを使用して、推奨事項が「コックピット」サービスを開始すべきであると推測します。
+        # # 3b. プレイブックの冒頭にある「module_defaults」セクションのコメントを解除します。
+        # # 3c. 現在のタスクの提案をクリアし、更新された提案をリクエストする。
+        # #     Note - Ansible Lightspeedは、提案を生成する際に、完全なプレイブックコンテキストを使用し、
+        # #            「module_defaults」を評価します。
+        # #            更新された提案には、「enabled:」と「state:」の引数は含まれなくなりました。
+    # - name: Start and enable service
+
+        # TASK 4
+        # # 4a. 以下のタスクの説明のコメントを解除し、Ansible Playbookタスクの提案を生成します。
+        # # 4b. プレイブックを保存します。
+    # - name: Wait 15 seconds port 9090
