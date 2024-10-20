@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+ansible = "*"
+ansible-lint = "*"
+ansible-creator = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
+python_full_version = "3.11.7"
+
+[scripts]
+start = "ansible-playbook -i inventories/handson/hosts.yaml handson.yaml --diff --ssh-common-args='-o StrictHostKeyChecking=no'"

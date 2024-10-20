@@ -1,0 +1,10 @@
+---
+- name: LightSpeed Handson1
+  hosts: handson-server
+  remote_user: itzuser
+  become: true
+
+  roles:
+     - common
+     - nginx
+    #  - firewalld
