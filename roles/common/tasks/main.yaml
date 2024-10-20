@@ -13,9 +13,9 @@
     enabled: true
 
 # タイムゾーンをAsia/Tokyoに変更
-- name: Set timezone to Asia/Tokyo
-  community.general.timezone:
-    name: Asia/Tokyo
+# - name: Set timezone to Asia/Tokyo
+#   community.general.timezone:
+#     name: Asia/Tokyo
 
 # ここは削除せずに残して下さい
 - name: Set fact hostname
